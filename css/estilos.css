@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+.bodyInicio {
+  display: grid;
+  height: 500px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 150px 1fr 1fr 100px;
+  grid-template-areas: "nav   header         header         header" "nav   productos      productos      aside" "nav   preguntasfrec  preguntasfrec  aside"    "nav   footer         footer         footer"; }
+
+/*VARIABLES*/
+header {
+  text-align: center;
+  grid-area: header;
+  background-color: coral; }
+  header nav {
+    background-color: #1d1d1c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-area: nav;
+    background-color: coral; }
+    header nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      list-style-type: none; }
+      header nav ul li {
+        display: inline-block;
+        list-style: none;
+        text-decoration: none; }
+        header nav ul li a {
+          text-decoration: none;
+          color: white;
+          font-weight: 900;
+          text-decoration: none;
+          display: block; }
+
+.hero-title {
+  background-color: #f6eb76;
+  text-align: center;
+  padding: 20px 20px; }
+  .hero-title h2 {
+    color: black¿;
+    font-size: 40px; }
+  .hero-title p {
+    font-size: 30px; }
+
+.galeria {
+  background-color: black; }
+  .galeria .galeria-title h2 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .galeria .galeria-title p {
+    font-size: 20px;
+    text-align: center;
+    color: white; }
+  .galeria .galeria-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px; }
+    .galeria .galeria-body .galeria-img {
+      width: 400px;
+      height: 200px;
+      transition: 1.5s;
+      border-radius: 15px; }
+    .galeria .galeria-body h3 {
+      color: white;
+      text-align: center; }
+    .galeria .galeria-body .galeria-button {
+      text-align: center;
+      padding-top: 20px;
+      padding-left: 35px;
+      padding-bottom: 20px;
+      font-weight: 20px; }
+      .galeria .galeria-body .galeria-button button {
+        border: none;
+        color: #090908;
+        background-color: #f7e309;
+        font-size: 15px;
+        border-radius: 7px;
+        padding: 10px;
+        cursor: pointer; }
+  .galeria .exp-button {
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-bottom: 20px; }
+    .galeria .exp-button button {
+      font-size: 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 7px;
+      padding: 10px;
+      cursor: pointer; }
+
+/* Contacto */
+.bodyContactos {
+  background-color: #191919; }
+  .bodyContactos .formulario {
+    font-family: 'Quicksand', sans-serif;
+    display: grid;
+    margin: auto;
+    margin-top: 40px;
+    padding: 30px;
+    box-shadow: 5px 5px 42px 5px #e7dd87;
+    background-color: #fff700;
+    max-width: 800px;
+    color: black;
+    animation: Animacion;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 60px;
+    grid-template-areas: "zona1 zona1"  "zona2 zona3"  "zona4 zona5"  "zona6 zona6"  "zona7 zona7"; }
+    .bodyContactos .formulario label {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      text-anchor: initial; }
+      .bodyContactos .formulario label input {
+        background-color: #f6f893;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid black;
+        color: black;
+        margin-top: 10px; }
+    .bodyContactos .formulario button {
+      grid-area: zona7;
+      background-color: black;
+      border: none;
+      color: #ffea00;
+      margin: 10px;
+      border-radius: 5px; }
+
+.footer {
+  text-align: center;
+  justify-content: space-around;
+  padding: 50px; }
+  .footer a img {
+    width: 50px;
+    height: 50px; }
+  .footer p {
+    padding: 20px;
+    color: #f7e309; }

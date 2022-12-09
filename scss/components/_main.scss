@@ -1,0 +1,199 @@
+.hero-title{
+    background-color: rgb(246, 235, 118);
+    text-align: center;
+    padding: 20px 20px;
+
+    h2{
+        color: black¿;
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 30px;
+
+    }
+}
+
+.hero{
+
+}
+
+.Productos{
+
+}
+
+.galeria{
+
+    background-color: black;
+
+    
+    .galeria-title{
+
+            h2{
+
+                font-size: 30px;
+                color: white;
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+            }
+
+            p{
+                font-size: 20px;
+                text-align: center;
+                color: white;
+
+            }
+
+    }
+
+    .galeria-body{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 20px;
+
+        .galeria-img{
+
+            width: 400px;
+            height: 200px;
+            transition: 1.5s;
+            border-radius: 15px;
+
+        }
+
+        h3{
+            color: white;
+            text-align: center;
+        }
+
+        .galeria-button{
+            text-align: center;
+            padding-top: 20px;
+            padding-left: 35px;
+            padding-bottom: 20px;
+            font-weight: 20px;
+            
+            button{
+                border: none;
+                color: rgb(9, 9, 8);
+                background-color:rgb(247, 227, 9);
+                font-size: 15px;
+                border-radius: 7px;
+                padding: 10px;
+                cursor: pointer;
+
+            }
+        }
+
+    }
+
+    .exp-button{
+
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 35px;
+        padding-bottom: 20px;
+            
+        button{
+            font-size: 20px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: none;
+            border-radius: 7px;
+            padding: 10px;
+            cursor: pointer;
+        
+
+         }
+    }
+
+}
+
+/* Contacto */
+
+head {
+
+    title{
+
+    }
+
+    h1{
+        .nav{
+            .menu{
+                li{
+                    a{
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.bodyContactos{
+
+    background-color: rgb(25, 25, 25);
+     
+    .formulario{
+
+        font-family: 'Quicksand', sans-serif;
+        display: grid;
+        margin: auto;
+        margin-top: 40px;
+        padding: 30px;
+        box-shadow: 5px 5px 42px 5px #e7dd87;
+        background-color: rgb(255, 247, 0);
+        max-width: 800px;
+        color: black;
+        animation: Animacion;
+        animation-duration: 4.5s;
+        animation-iteration-count: infinite;
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 60px;
+        grid-template-areas: "zona1 zona1" 
+                             "zona2 zona3" 
+                             "zona4 zona5" 
+                             "zona6 zona6" 
+                             "zona7 zona7" ;
+    
+            h2{
+
+             }
+            label{
+
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                text-anchor: initial;
+                
+                
+                input{
+
+                    background-color: rgb(246, 248, 147);
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px solid rgb(0, 0, 0);
+                    color: rgb(0, 0, 0);
+                    margin-top: 10px;
+
+                    }
+
+                }
+
+        button{
+
+            grid-area: zona7;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            color: rgb(255, 234, 0);
+            margin: 10px;
+            border-radius: 5px;
+
+        }
+    }
+}
